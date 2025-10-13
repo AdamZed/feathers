@@ -1,0 +1,120 @@
+<head>
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+  <table class="table-fixed w-screen h-screen text-center">
+    <tr>
+      <th>
+        <button class="bg-red-500 hover:cursor-pointer hover:bg-red-700 text-white font-bold py-2 px-2 rounded-full" onclick="reset()">Reset</button>
+      </th>
+      <th>
+        <div>MultiPlayer</div>
+      </th>
+      <th>P1</th>
+      <th>P2</th>
+      <th>P3</th>
+      <th>P4</th>
+      <th>P5</th>
+    </tr>
+    <tr>
+      <th rowspan="3">
+        <div class="[writing-mode:sideways-lr]">Points on Cards</div>
+      </th>
+      <th>Birds</th>
+      <td player="1" contenteditable="true">0</td>
+      <td player="2" contenteditable="true">0</td>
+      <td player="3" contenteditable="true">0</td>
+      <td player="4" contenteditable="true">0</td>
+      <td player="5" contenteditable="true">0</td>
+    </tr>
+    <tr>
+      <th>Bonus Cards</th>
+      <td player="1" contenteditable="true">0</td>
+      <td player="2" contenteditable="true">0</td>
+      <td player="3" contenteditable="true">0</td>
+      <td player="4" contenteditable="true">0</td>
+      <td player="5" contenteditable="true">0</td>
+    </tr>
+    <tr>
+      <th>End-of-Round Goals</th>
+      <td player="1" contenteditable="true">0</td>
+      <td player="2" contenteditable="true">0</td>
+      <td player="3" contenteditable="true">0</td>
+      <td player="4" contenteditable="true">0</td>
+      <td player="5" contenteditable="true">0</td>
+    </tr>
+    <tr>
+      <th rowspan="3">
+        <div class="[writing-mode:sideways-lr]">One Point Each</div>
+      </th>
+      <th>Eggs</th>
+      <td player="1" contenteditable="true">0</td>
+      <td player="2" contenteditable="true">0</td>
+      <td player="3" contenteditable="true">0</td>
+      <td player="4" contenteditable="true">0</td>
+      <td player="5" contenteditable="true">0</td>
+    </tr>
+    <tr>
+      <th>Food on Cards</th>
+      <td player="1" contenteditable="true">0</td>
+      <td player="2" contenteditable="true">0</td>
+      <td player="3" contenteditable="true">0</td>
+      <td player="4" contenteditable="true">0</td>
+      <td player="5" contenteditable="true">0</td>
+    </tr>
+    <tr>
+      <th>Tucked Cards</th>
+      <td player="1" contenteditable="true">0</td>
+      <td player="2" contenteditable="true">0</td>
+      <td player="3" contenteditable="true">0</td>
+      <td player="4" contenteditable="true">0</td>
+      <td player="5" contenteditable="true">0</td>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Total</th>
+      <td id="total-p1">0</td>
+      <td id="total-p2">0</td>
+      <td id="total-p3">0</td>
+      <td id="total-p4">0</td>
+      <td id="total-p5">0</td>
+    </tr>
+  </table>
+
+  <script>
+    function reset() {
+      document.querySelectorAll('td[contenteditable="true"]').forEach((td) => {
+        td.textContent = 0;
+      });
+      [1, 2, 3, 4, 5].forEach((i) => doTotal(i));
+    }
+    function handleChange(td) {
+      if (!Number.isInteger(Number(td.textContent.trim()))) td.textContent = "";
+    }
+    function handleBlur(td) {
+      if (td.textContent == "") td.textContent = "0";
+      doTotal(td.getAttribute("player"));
+    }
+    function doTotal(player) {
+      totalPt = 0;
+      document.querySelectorAll(`td[player="${player}"]`).forEach((td) => {
+        console.log("afafaf");
+        totalPt += Number(td.textContent.trim());
+      });
+      document.getElementById(`total-p${player}`).textContent = totalPt;
+    }
+
+    document.querySelectorAll('td[contenteditable="true"]').forEach((td) => {
+      td.addEventListener("input", () => {
+        handleChange(td);
+      });
+      td.addEventListener("blur", () => {
+        handleBlur(td);
+      });
+      td.addEventListener("focus", () => {
+        if (td.textContent == "0") td.textContent = "";
+      });
+    });
+  </script>
+</body>
