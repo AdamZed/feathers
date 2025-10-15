@@ -8,22 +8,32 @@
   </head>
 
   <body class="bg-gray-700">
-    <table class="text-xl table-fixed w-screen h-screen text-center">
+    <table class="text-md table-fixed w-screen h-screen text-center">
       <tr class="border-b-5">
-        <th class="bg-red-500 h-20 w-20">
+        <th class="bg-red-500 h-12 w-12">
           <button
-            class="bg-red-500 hover:cursor-pointer hover:bg-red-700 text-white font-bold py-4 px-4"
+            class="bg-red-500 hover:cursor-pointer focus:bg-red-700 click:bg-red-700 active:bg-red-700 text-white font-bold py-4 px-4"
             onclick="reset()"
           >
             <img src="src/reset.svg" class="w-5" />
           </button>
         </th>
-        <th class="bg-blue-300 w-35">MultiPlayer</th>
-        <th class="bg-blue-100 text-3xl" contenteditable="true">P1</th>
-        <th class="bg-blue-200 text-3xl" contenteditable="true">P2</th>
-        <th class="bg-blue-100 text-3xl" contenteditable="true">P3</th>
-        <th class="bg-blue-200 text-3xl" contenteditable="true">P4</th>
-        <th class="bg-blue-100 text-3xl" contenteditable="true">P5</th>
+        <th class="bg-blue-300 w-27">MultiPlayer</th>
+        <th class="bg-blue-100 text-2xl" contenteditable="true" player="1">
+          P1
+        </th>
+        <th class="bg-blue-200 text-2xl" contenteditable="true" player="2">
+          P2
+        </th>
+        <th class="bg-blue-100 text-2xl" contenteditable="true" player="3">
+          P3
+        </th>
+        <th class="bg-blue-200 text-2xl" contenteditable="true" player="4">
+          P4
+        </th>
+        <th class="bg-blue-100 text-2xl" contenteditable="true" player="5">
+          P5
+        </th>
       </tr>
       <tr>
         <th class="bg-pink-400" rowspan="3">
@@ -34,55 +44,55 @@
           </div>
         </th>
         <th class="bg-pink-300">Birds</th>
-        <td class="bg-pink-100 text-4xl" player="1" contenteditable="true">
+        <td class="bg-pink-100 text-3xl" player="1" contenteditable="true">
           0
         </td>
-        <td class="bg-pink-200 text-4xl" player="2" contenteditable="true">
+        <td class="bg-pink-200 text-3xl" player="2" contenteditable="true">
           0
         </td>
-        <td class="bg-pink-100 text-4xl" player="3" contenteditable="true">
+        <td class="bg-pink-100 text-3xl" player="3" contenteditable="true">
           0
         </td>
-        <td class="bg-pink-200 text-4xl" player="4" contenteditable="true">
+        <td class="bg-pink-200 text-3xl" player="4" contenteditable="true">
           0
         </td>
-        <td class="bg-pink-100 text-4xl" player="5" contenteditable="true">
+        <td class="bg-pink-100 text-3xl" player="5" contenteditable="true">
           0
         </td>
       </tr>
       <tr>
         <th class="bg-pink-300">Bonus Cards</th>
-        <td class="bg-pink-100 text-4xl" player="1" contenteditable="true">
+        <td class="bg-pink-100 text-3xl" player="1" contenteditable="true">
           0
         </td>
-        <td class="bg-pink-200 text-4xl" player="2" contenteditable="true">
+        <td class="bg-pink-200 text-3xl" player="2" contenteditable="true">
           0
         </td>
-        <td class="bg-pink-100 text-4xl" player="3" contenteditable="true">
+        <td class="bg-pink-100 text-3xl" player="3" contenteditable="true">
           0
         </td>
-        <td class="bg-pink-200 text-4xl" player="4" contenteditable="true">
+        <td class="bg-pink-200 text-3xl" player="4" contenteditable="true">
           0
         </td>
-        <td class="bg-pink-100 text-4xl" player="5" contenteditable="true">
+        <td class="bg-pink-100 text-3xl" player="5" contenteditable="true">
           0
         </td>
       </tr>
       <tr>
         <th class="bg-pink-300">End-of-Round Goals</th>
-        <td class="bg-pink-100 text-4xl" player="1" contenteditable="true">
+        <td class="bg-pink-100 text-3xl" player="1" contenteditable="true">
           0
         </td>
-        <td class="bg-pink-200 text-4xl" player="2" contenteditable="true">
+        <td class="bg-pink-200 text-3xl" player="2" contenteditable="true">
           0
         </td>
-        <td class="bg-pink-100 text-4xl" player="3" contenteditable="true">
+        <td class="bg-pink-100 text-3xl" player="3" contenteditable="true">
           0
         </td>
-        <td class="bg-pink-200 text-4xl" player="4" contenteditable="true">
+        <td class="bg-pink-200 text-3xl" player="4" contenteditable="true">
           0
         </td>
-        <td class="bg-pink-100 text-4xl" player="5" contenteditable="true">
+        <td class="bg-pink-100 text-3xl" player="5" contenteditable="true">
           0
         </td>
       </tr>
@@ -95,65 +105,65 @@
           </div>
         </th>
         <th class="bg-green-300">Eggs</th>
-        <td class="bg-green-100 text-4xl" player="1" contenteditable="true">
+        <td class="bg-green-100 text-3xl" player="1" contenteditable="true">
           0
         </td>
-        <td class="bg-green-200 text-4xl" player="2" contenteditable="true">
+        <td class="bg-green-200 text-3xl" player="2" contenteditable="true">
           0
         </td>
-        <td class="bg-green-100 text-4xl" player="3" contenteditable="true">
+        <td class="bg-green-100 text-3xl" player="3" contenteditable="true">
           0
         </td>
-        <td class="bg-green-200 text-4xl" player="4" contenteditable="true">
+        <td class="bg-green-200 text-3xl" player="4" contenteditable="true">
           0
         </td>
-        <td class="bg-green-100 text-4xl" player="5" contenteditable="true">
+        <td class="bg-green-100 text-3xl" player="5" contenteditable="true">
           0
         </td>
       </tr>
       <tr>
         <th class="bg-green-300">Cached Food</th>
-        <td class="bg-green-100 text-4xl" player="1" contenteditable="true">
+        <td class="bg-green-100 text-3xl" player="1" contenteditable="true">
           0
         </td>
-        <td class="bg-green-200 text-4xl" player="2" contenteditable="true">
+        <td class="bg-green-200 text-3xl" player="2" contenteditable="true">
           0
         </td>
-        <td class="bg-green-100 text-4xl" player="3" contenteditable="true">
+        <td class="bg-green-100 text-3xl" player="3" contenteditable="true">
           0
         </td>
-        <td class="bg-green-200 text-4xl" player="4" contenteditable="true">
+        <td class="bg-green-200 text-3xl" player="4" contenteditable="true">
           0
         </td>
-        <td class="bg-green-100 text-4xl" player="5" contenteditable="true">
+        <td class="bg-green-100 text-3xl" player="5" contenteditable="true">
           0
         </td>
       </tr>
       <tr>
         <th class="bg-green-300">Tucked Cards</th>
-        <td class="bg-green-100 text-4xl" player="1" contenteditable="true">
+        <td class="bg-green-100 text-3xl" player="1" contenteditable="true">
           0
         </td>
-        <td class="bg-green-200 text-4xl" player="2" contenteditable="true">
+        <td class="bg-green-200 text-3xl" player="2" contenteditable="true">
           0
         </td>
-        <td class="bg-green-100 text-4xl" player="3" contenteditable="true">
+        <td class="bg-green-100 text-3xl" player="3" contenteditable="true">
           0
         </td>
-        <td class="bg-green-200 text-4xl" player="4" contenteditable="true">
+        <td class="bg-green-200 text-3xl" player="4" contenteditable="true">
           0
         </td>
-        <td class="bg-green-100 text-4xl" player="5" contenteditable="true">
+        <td class="bg-green-100 text-3xl" player="5" contenteditable="true">
           0
         </td>
       </tr>
       <tr class="border-t-5">
         <th colspan="2" class="bg-yellow-200">Total</th>
-        <td class="bg-yellow-50 text-4xl" id="total-p1">0</td>
-        <td class="bg-yellow-100 text-4xl" id="total-p2">0</td>
-        <td class="bg-yellow-50 text-4xl" id="total-p3">0</td>
-        <td class="bg-yellow-100 text-4xl" id="total-p4">0</td>
-        <td class="bg-yellow-50 text-4xl" id="total-p5">0</td>
+        <td class="bg-yellow-50 text-3xl" id="total-p1">0</td>
+        <td class="bg-yellow-100 text-3xl" id="total-p2">0</td>
+        <td class="bg-yellow-50 text-3xl" id="total-p3">0</td>
+        <td class="bg-yellow-100 text-3xl" id="total-p4">0</td>
+        <td class="bg-yellow-50 text-3xl" id="total-p5">0</td>
       </tr>
     </table>
 
@@ -166,18 +176,42 @@
           });
         [1, 2, 3, 4, 5].forEach((i) => doTotal(i));
       }
-      function handleChange(td) {
+      function handleScoreChange(td) {
         if (!Number.isInteger(Number(td.textContent.trim())))
           td.textContent = "";
       }
-      function handleBlur(td) {
-        if (td.textContent == "") td.textContent = "0";
+      function handleScoreBlur(td) {
+        if (td.textContent.trim() == "") td.textContent = "0";
         doTotal(td.getAttribute("player"));
       }
+      function handleScoreFocus(td) {
+        if (td.textContent.trim() == "0") td.textContent = "";
+      }
+      function handleNameChange(th) {
+        if (
+          th.textContent.trim().length > 2 ||
+          th.textContent.trim().length != th.textContent.length
+        ) {
+          th.textContent = th.textContent.trim().substring(0, 2);
+          const range = document.createRange();
+          range.selectNodeContents(th);
+          range.collapse(false); // Collapse to end
+          window.getSelection().removeAllRanges();
+          window.getSelection().addRange(range);
+        }
+      }
+      function handleNameBlur(th) {
+        if (th.textContent.trim() == "")
+          th.textContent = "P" + th.getAttribute("player");
+      }
+      function handleNameFocus(th) {
+        if (th.textContent.trim() == "P" + th.getAttribute("player"))
+          th.textContent = "";
+      }
+
       function doTotal(player) {
         totalPt = 0;
         document.querySelectorAll(`td[player="${player}"]`).forEach((td) => {
-          console.log("afafaf");
           totalPt += Number(td.textContent.trim());
         });
         document.getElementById(`total-p${player}`).textContent = totalPt;
@@ -185,13 +219,25 @@
 
       document.querySelectorAll('td[contenteditable="true"]').forEach((td) => {
         td.addEventListener("input", () => {
-          handleChange(td);
+          handleScoreChange(td);
         });
         td.addEventListener("blur", () => {
-          handleBlur(td);
+          handleScoreBlur(td);
         });
         td.addEventListener("focus", () => {
-          if (td.textContent == "0") td.textContent = "";
+          handleScoreFocus(td);
+        });
+      });
+
+      document.querySelectorAll('th[contenteditable="true"]').forEach((th) => {
+        th.addEventListener("input", () => {
+          handleNameChange(th);
+        });
+        th.addEventListener("blur", () => {
+          handleNameBlur(th);
+        });
+        th.addEventListener("focus", () => {
+          handleNameFocus(th);
         });
       });
     </script>
