@@ -10,160 +10,148 @@
   <body class="bg-gray-700">
     <table class="text-md table-fixed w-screen h-screen text-center">
       <tr class="border-b-5">
-        <th class="bg-red-500 h-12 w-12">
+        <th class="bg-slate-500 h-12 w-12">
           <button
-            class="bg-red-500 hover:cursor-pointer focus:bg-red-700 click:bg-red-700 active:bg-red-700 text-white font-bold py-4 px-4"
+            class="bg-slate-500 hover:cursor-pointer focus:bg-slate-700 transition-all hover:bg-slate-700 active:bg-slate-700 text-white font-bold py-4 px-4"
             onclick="reset()"
           >
             <img src="src/reset.svg" class="w-5" />
           </button>
         </th>
-        <th class="bg-blue-300 w-27">MultiPlayer</th>
-        <th class="bg-blue-100 text-2xl" contenteditable="true" player="1">
+        <th class="bg-slate-500 w-27">MultiPlayer</th>
+        <th class="bg-red-500 text-2xl" contenteditable="true" player="1">
           P1
         </th>
-        <th class="bg-blue-200 text-2xl" contenteditable="true" player="2">
+        <th class="bg-amber-400 text-2xl" contenteditable="true" player="2">
           P2
         </th>
-        <th class="bg-blue-100 text-2xl" contenteditable="true" player="3">
+        <th class="bg-green-400 text-2xl" contenteditable="true" player="3">
           P3
         </th>
-        <th class="bg-blue-200 text-2xl" contenteditable="true" player="4">
+        <th class="bg-sky-500 text-2xl" contenteditable="true" player="4">
           P4
         </th>
-        <th class="bg-blue-100 text-2xl" contenteditable="true" player="5">
+        <th class="bg-violet-500 text-2xl" contenteditable="true" player="5">
           P5
         </th>
       </tr>
       <tr>
-        <th class="bg-pink-400" rowspan="3">
+        <th class="bg-slate-400" rowspan="3">
           <div
-            class="bg-pink-400 [writing-mode:sideways-lr] h-[100%] w-[100%] flex justify-center items-center"
+            class="bg-slate-400 [writing-mode:sideways-lr] h-[100%] w-[100%] flex justify-center items-center"
           >
             <p>Points on Cards</p>
           </div>
         </th>
-        <th class="bg-pink-300">Birds</th>
-        <td class="bg-pink-100 text-3xl" player="1" contenteditable="true">
+        <th class="bg-slate-200">Birds</th>
+        <td class="bg-red-200 text-3xl" player="1" contenteditable="true">0</td>
+        <td class="bg-amber-200 text-3xl" player="2" contenteditable="true">
           0
         </td>
-        <td class="bg-pink-200 text-3xl" player="2" contenteditable="true">
+        <td class="bg-green-200 text-3xl" player="3" contenteditable="true">
           0
         </td>
-        <td class="bg-pink-100 text-3xl" player="3" contenteditable="true">
+        <td class="bg-sky-200 text-3xl" player="4" contenteditable="true">
           0
         </td>
-        <td class="bg-pink-200 text-3xl" player="4" contenteditable="true">
-          0
-        </td>
-        <td class="bg-pink-100 text-3xl" player="5" contenteditable="true">
-          0
-        </td>
-      </tr>
-      <tr>
-        <th class="bg-pink-300">Bonus Cards</th>
-        <td class="bg-pink-100 text-3xl" player="1" contenteditable="true">
-          0
-        </td>
-        <td class="bg-pink-200 text-3xl" player="2" contenteditable="true">
-          0
-        </td>
-        <td class="bg-pink-100 text-3xl" player="3" contenteditable="true">
-          0
-        </td>
-        <td class="bg-pink-200 text-3xl" player="4" contenteditable="true">
-          0
-        </td>
-        <td class="bg-pink-100 text-3xl" player="5" contenteditable="true">
+        <td class="bg-violet-200 text-3xl" player="5" contenteditable="true">
           0
         </td>
       </tr>
       <tr>
-        <th class="bg-pink-300">End-of-Round Goals</th>
-        <td class="bg-pink-100 text-3xl" player="1" contenteditable="true">
+        <th class="bg-slate-200">Bonus Cards</th>
+        <td class="bg-red-200 text-3xl" player="1" contenteditable="true">0</td>
+        <td class="bg-amber-200 text-3xl" player="2" contenteditable="true">
           0
         </td>
-        <td class="bg-pink-200 text-3xl" player="2" contenteditable="true">
+        <td class="bg-green-200 text-3xl" player="3" contenteditable="true">
           0
         </td>
-        <td class="bg-pink-100 text-3xl" player="3" contenteditable="true">
+        <td class="bg-sky-200 text-3xl" player="4" contenteditable="true">
           0
         </td>
-        <td class="bg-pink-200 text-3xl" player="4" contenteditable="true">
+        <td class="bg-violet-200 text-3xl" player="5" contenteditable="true">
           0
         </td>
-        <td class="bg-pink-100 text-3xl" player="5" contenteditable="true">
+      </tr>
+      <tr>
+        <th class="bg-slate-200">End-of-Round Goals</th>
+        <td class="bg-red-200 text-3xl" player="1" contenteditable="true">0</td>
+        <td class="bg-amber-200 text-3xl" player="2" contenteditable="true">
+          0
+        </td>
+        <td class="bg-green-200 text-3xl" player="3" contenteditable="true">
+          0
+        </td>
+        <td class="bg-sky-200 text-3xl" player="4" contenteditable="true">
+          0
+        </td>
+        <td class="bg-violet-200 text-3xl" player="5" contenteditable="true">
           0
         </td>
       </tr>
       <tr class="border-t-3">
-        <th class="bg-green-400" rowspan="3">
+        <th class="bg-slate-400" rowspan="3">
           <div
-            class="[writing-mode:sideways-lr] bg-green-400 h-[100%] w-[100%] flex justify-center items-center"
+            class="[writing-mode:sideways-lr] bg-slate-400 h-[100%] w-[100%] flex justify-center items-center"
           >
             One Point Each
           </div>
         </th>
-        <th class="bg-green-300">Eggs</th>
-        <td class="bg-green-100 text-3xl" player="1" contenteditable="true">
+        <th class="bg-slate-200">Eggs</th>
+        <td class="bg-red-200 text-3xl" player="1" contenteditable="true">0</td>
+        <td class="bg-amber-200 text-3xl" player="2" contenteditable="true">
           0
         </td>
-        <td class="bg-green-200 text-3xl" player="2" contenteditable="true">
+        <td class="bg-green-200 text-3xl" player="3" contenteditable="true">
           0
         </td>
-        <td class="bg-green-100 text-3xl" player="3" contenteditable="true">
+        <td class="bg-sky-200 text-3xl" player="4" contenteditable="true">
           0
         </td>
-        <td class="bg-green-200 text-3xl" player="4" contenteditable="true">
-          0
-        </td>
-        <td class="bg-green-100 text-3xl" player="5" contenteditable="true">
-          0
-        </td>
-      </tr>
-      <tr>
-        <th class="bg-green-300">Cached Food</th>
-        <td class="bg-green-100 text-3xl" player="1" contenteditable="true">
-          0
-        </td>
-        <td class="bg-green-200 text-3xl" player="2" contenteditable="true">
-          0
-        </td>
-        <td class="bg-green-100 text-3xl" player="3" contenteditable="true">
-          0
-        </td>
-        <td class="bg-green-200 text-3xl" player="4" contenteditable="true">
-          0
-        </td>
-        <td class="bg-green-100 text-3xl" player="5" contenteditable="true">
+        <td class="bg-violet-200 text-3xl" player="5" contenteditable="true">
           0
         </td>
       </tr>
       <tr>
-        <th class="bg-green-300">Tucked Cards</th>
-        <td class="bg-green-100 text-3xl" player="1" contenteditable="true">
+        <th class="bg-slate-200">Cached Food</th>
+        <td class="bg-red-200 text-3xl" player="1" contenteditable="true">0</td>
+        <td class="bg-amber-200 text-3xl" player="2" contenteditable="true">
           0
         </td>
-        <td class="bg-green-200 text-3xl" player="2" contenteditable="true">
+        <td class="bg-green-200 text-3xl" player="3" contenteditable="true">
           0
         </td>
-        <td class="bg-green-100 text-3xl" player="3" contenteditable="true">
+        <td class="bg-sky-200 text-3xl" player="4" contenteditable="true">
           0
         </td>
-        <td class="bg-green-200 text-3xl" player="4" contenteditable="true">
+        <td class="bg-violet-200 text-3xl" player="5" contenteditable="true">
           0
         </td>
-        <td class="bg-green-100 text-3xl" player="5" contenteditable="true">
+      </tr>
+      <tr>
+        <th class="bg-slate-200">Tucked Cards</th>
+        <td class="bg-red-200 text-3xl" player="1" contenteditable="true">0</td>
+        <td class="bg-amber-200 text-3xl" player="2" contenteditable="true">
+          0
+        </td>
+        <td class="bg-green-200 text-3xl" player="3" contenteditable="true">
+          0
+        </td>
+        <td class="bg-sky-200 text-3xl" player="4" contenteditable="true">
+          0
+        </td>
+        <td class="bg-violet-200 text-3xl" player="5" contenteditable="true">
           0
         </td>
       </tr>
       <tr class="border-t-5">
-        <th colspan="2" class="bg-yellow-200">Total</th>
-        <td class="bg-yellow-50 text-3xl" id="total-p1">0</td>
-        <td class="bg-yellow-100 text-3xl" id="total-p2">0</td>
-        <td class="bg-yellow-50 text-3xl" id="total-p3">0</td>
-        <td class="bg-yellow-100 text-3xl" id="total-p4">0</td>
-        <td class="bg-yellow-50 text-3xl" id="total-p5">0</td>
+        <th colspan="2" class="bg-slate-500">Total</th>
+        <td class="bg-red-300 text-3xl" id="total-p1">0</td>
+        <td class="bg-amber-300 text-3xl" id="total-p2">0</td>
+        <td class="bg-green-300 text-3xl" id="total-p3">0</td>
+        <td class="bg-sky-300 text-3xl" id="total-p4">0</td>
+        <td class="bg-violet-300 text-3xl" id="total-p5">0</td>
       </tr>
     </table>
 
